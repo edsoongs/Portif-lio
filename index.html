@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Edson BG</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-e"></i>
+                    <div class="logo-text">Edson Barbosa Guimarães</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Portifólio</a></li>
+                        <li><a href="#">Resumo</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="img/icone-portifolio.jpg" alt="imagem de perfil">
+                </div>
+                <div class="hero-text">
+                    <h5>Olá, eu sou um <span class="input">Desenvolvedor Frontend</span></h5>
+                    <h1>Edson Barbosa Guimarães</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odio 
+                       nesciunt eius error libero! Dignissimos vitae quae neque vero accusamus, nam quas 
+                       laudantium voluptas dolorem libero ipsa sed non tenetur.
+                    </p>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Baixar CV</a>
+                        <a href="#" class="btn">Contato</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        /* criando o clique do botão */
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed= new Typed(".input",{
+            strings:["Desenvolvedor Frontend","Desenvolvedor Frontend","Desenvolvedor Web"],
+            typeSpeed: 70,
+            backSpeed: 55,
+            loop:true
+        })
+    </script>
+</body>
+</html>
